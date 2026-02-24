@@ -1,0 +1,242 @@
+html {
+	font-size: 62.5%;
+}
+:root {
+	--bg: #0f172a;
+	--text: #e5e7eb;
+	--sec: #0022ff;
+	--acc: #00ffff;
+	--fbg: #;
+	--ftx: #;
+}
+
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 2rem;
+	max-width: 100rem;
+	height: auto;
+	width: 100%;
+	line-height: 1.2;
+	font-size: 1.6rem;
+	font-family: 'Roboto' sans-serif;
+	box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.top{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	padding: 3rem 0rem;
+	box-sizing: border-box;
+	background: var(--bg);
+	color: var(--text);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+/* The Login Button */
+.login-btn {
+  background-color: var(--sec);
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  margin-left: auto;
+border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem; /* Rounded corners */
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background-color: #00a0ff;  /* Darkens slightly on hover */
+}
+
+
+/* 2. The Hamburger Icon */
+.navbar {      /* This "lifts" it so it doesn't push other items */           /* Moves it to the far left */
+  transform: translateY(-50%);
+  font-size: 6rem;
+  margin-right: auto;
+  cursor: pointer;
+  color: var(--sec);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 2rem;
+}
+
+.navbar:hover {
+	color: var(--sec);
+}
+.menu {
+	display: none;
+	position: absolute;
+	top: 6rem;
+	left: 0;
+	width: 30%;
+	height: 100vw;
+	background: #111;
+flex-direction: column;
+z-index: 1000;
+}
+
+.menu a {
+	padding: 1.2rem 1.6rem;
+	color: var(--text);
+	text-decoration: none;
+	border-bottom: 0.3rem solid #111;
+}
+
+.menu a:hover {
+	background: #111;
+}
+
+.search-btn {
+	display: none;
+}
+.search {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 90%;
+	max-width: 90rem;
+	margin: 2rem auto;
+	background: #fff;
+	border: 0.15rem solid #e0e0e0;
+	padding: 0.4rem 1.2rem;
+	border-radius: 2.5rem;
+	transition: all 0.25s cubic-bezier;
+	cursor: pointer;
+}
+
+.search:focus-within {
+	border-color: #4285f4;
+	box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.08);
+	transform: translateY(-1rem);
+}
+
+.search-input {
+ flex: 1;
+ border: none;
+ outline: none;
+ padding: 0.4rem 0.33rem;
+ font-size: 1.6rem;
+ background: transparent;
+ color: #202124;
+}
+
+
+
+header {
+	text-align: center;
+  justify-content: center;
+}
+
+h2 {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 1.3rem;
+}
+
+.des {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 1rem;
+}
+
+h3 {
+	text-align: center;
+  justify-content: center;
+}
+
+.card {
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	font-family: 'inter', sans-serif;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	position: relative;
+	bottom: 1.5rem;
+	background-color: transparent;
+	border-radius: 0.4rem;
+}
+
+.images p:hover {
+	color: var(--acc);
+}
+
+.images {
+	list-style: none;
+	display: flex;
+	padding: -3rem 0rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	gap: 2rem;
+	max-width: 100rem;
+}
+
+.images img {
+	width: 11rem;
+	height: 10rem;
+	object-fit: cover;
+	border-radius: 1rem;
+}
+.images li {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.images p {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+	max-width: 13rem;
+	font-weight: 600;
+	color: var(--text);
+}
+.images::-webkit-scrollbar {
+	display: none;
+}
+
+.gallery {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	right: 2rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.3s ease;
+}
+
+.c {
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	font-family: 'Inter' sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+}
