@@ -21,9 +21,9 @@ body {
 	max-width: 100rem;
 	height: auto;
 	width: 100%;
-	line-height: 1.2;
+	line-height: 1.6;
 	font-size: 1.6rem;
-	font-family: 'Roboto' sans-serif;
+	font-family: 'Poppins' sans-serif;
 	box-sizing: border-box;
 }
 
@@ -235,7 +235,7 @@ a {
 .c {
 	justify-content: center;
 	align-items: center;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-family: 'Inter' sans-serif;
 	line-height: 1.5;
 	letter-spacing: 0.01em;
